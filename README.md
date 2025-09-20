@@ -60,10 +60,7 @@ cd DeltoBankBot
 
 ```bash
 # Crear el archivo .env
-echo "TELEGRAM_BOT_TOKEN=tu_token_aqui" > .env
-
-# O editarlo manualmente
-nano .env
+TELEGRAM_BOT_TOKEN=tu_token_aqui
 ```
 
 El archivo `.env` debe contener:
