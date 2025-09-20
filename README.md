@@ -45,12 +45,6 @@ Un bot bancario inteligente para Telegram que utiliza procesamiento de lenguaje 
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
-
-#### Para ejecución directa:
-- Python 3.8 o superior
-- Token de bot de Telegram (obtener en [@BotFather](https://t.me/botfather))
-
-#### Para ejecución con Docker:
 - Docker y Docker Compose instalados
 - Token de bot de Telegram (obtener en [@BotFather](https://t.me/botfather))
 
@@ -60,42 +54,32 @@ git clone https://github.com/Marki0/DeltoBankBot.git
 cd DeltoBankBot
 ```
 
-### 2. Crear Entorno Virtual
+### 2. Configurar Variables de Entorno
+
+**⚠️ IMPORTANTE**: Debes crear un archivo `.env` con tu token de Telegram antes de ejecutar el bot.
+
 ```bash
-python -m venv venv
+# Crear el archivo .env
+echo "TELEGRAM_BOT_TOKEN=tu_token_aqui" > .env
 
-# En Windows:
-venv\Scripts\activate
-
-# En macOS/Linux:
-source venv/bin/activate
+# O editarlo manualmente
+nano .env
 ```
 
-### 3. Instalar Dependencias
-```bash
-pip install -r requirements.txt
+El archivo `.env` debe contener:
+```
+TELEGRAM_BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
 ```
 
-### 4. Configurar Variables de Entorno
-```bash
-# Copiar archivo de ejemplo
-cp env.example .env
+**🔑 Obtener tu token:**
+1. Ve a [@BotFather](https://t.me/botfather) en Telegram
+2. Envía `/newbot` o usa un bot existente
+3. Copia el token que te proporciona
+4. Pégalo en el archivo `.env`
 
-# Editar .env con tu token de Telegram
-TELEGRAM_BOT_TOKEN=tu_token_aqui
-```
+### 3. Ejecutar el Bot con Docker
 
-### 5. Ejecutar el Bot
-
-#### Opción A: Ejecución Directa
-```bash
-cd src
-python main.py
-```
-
-#### Opción B: Usando Docker (Recomendado)
-
-##### Usando Docker Compose (Más fácil)
+#### Usando Docker Compose (Recomendado)
 ```bash
 # Construir y ejecutar el bot
 docker-compose up -d
@@ -107,23 +91,7 @@ docker-compose logs -f bot
 docker-compose down
 ```
 
-##### Usando Docker directamente
-```bash
-# Construir la imagen
-docker build -t delto-bank-bot .
-
-# Ejecutar el contenedor
-docker run -d --name delto-bank-bot --env-file .env delto-bank-bot
-
-# Ver logs
-docker logs -f delto-bank-bot
-
-# Detener el contenedor
-docker stop delto-bank-bot
-docker rm delto-bank-bot
-```
-
-##### Comandos útiles de Docker
+#### Comandos útiles de Docker
 ```bash
 # Ver contenedores en ejecución
 docker ps
@@ -138,7 +106,7 @@ docker-compose restart bot
 docker-compose ps
 ```
 
-##### Ventajas de usar Docker
+#### Ventajas de usar Docker
 - ✅ **Aislamiento**: El bot corre en su propio entorno
 - ✅ **Portabilidad**: Funciona igual en cualquier sistema operativo
 - ✅ **Fácil despliegue**: Un solo comando para levantar todo
