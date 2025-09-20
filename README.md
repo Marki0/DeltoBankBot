@@ -45,7 +45,13 @@ Un bot bancario inteligente para Telegram que utiliza procesamiento de lenguaje 
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
+
+#### Para ejecución directa:
 - Python 3.8 o superior
+- Token de bot de Telegram (obtener en [@BotFather](https://t.me/botfather))
+
+#### Para ejecución con Docker:
+- Docker y Docker Compose instalados
 - Token de bot de Telegram (obtener en [@BotFather](https://t.me/botfather))
 
 ### 1. Clonar el Repositorio
@@ -80,10 +86,65 @@ TELEGRAM_BOT_TOKEN=tu_token_aqui
 ```
 
 ### 5. Ejecutar el Bot
+
+#### Opción A: Ejecución Directa
 ```bash
 cd src
 python main.py
 ```
+
+#### Opción B: Usando Docker (Recomendado)
+
+##### Usando Docker Compose (Más fácil)
+```bash
+# Construir y ejecutar el bot
+docker-compose up -d
+
+# Ver logs del bot
+docker-compose logs -f bot
+
+# Detener el bot
+docker-compose down
+```
+
+##### Usando Docker directamente
+```bash
+# Construir la imagen
+docker build -t delto-bank-bot .
+
+# Ejecutar el contenedor
+docker run -d --name delto-bank-bot --env-file .env delto-bank-bot
+
+# Ver logs
+docker logs -f delto-bank-bot
+
+# Detener el contenedor
+docker stop delto-bank-bot
+docker rm delto-bank-bot
+```
+
+##### Comandos útiles de Docker
+```bash
+# Ver contenedores en ejecución
+docker ps
+
+# Acceder al contenedor para debugging
+docker exec -it delto-bank-bot bash
+
+# Reiniciar el bot
+docker-compose restart bot
+
+# Ver el estado del bot
+docker-compose ps
+```
+
+##### Ventajas de usar Docker
+- ✅ **Aislamiento**: El bot corre en su propio entorno
+- ✅ **Portabilidad**: Funciona igual en cualquier sistema operativo
+- ✅ **Fácil despliegue**: Un solo comando para levantar todo
+- ✅ **Gestión de dependencias**: No necesitas instalar Python ni librerías
+- ✅ **Escalabilidad**: Fácil de escalar horizontalmente
+- ✅ **Rollback**: Cambios rápidos entre versiones
 
 ## 📋 Uso del Bot
 
@@ -193,6 +254,7 @@ python test_persistence.py
 - **Python 3.8+** - Lenguaje principal
 - **python-telegram-bot** - Framework para bots de Telegram
 - **python-dotenv** - Gestión de variables de entorno
+- **Docker & Docker Compose** - Containerización y orquestación
 - **JSON** - Persistencia de datos
 - **Regex** - Procesamiento de texto
 - **Math** - Cálculos financieros
