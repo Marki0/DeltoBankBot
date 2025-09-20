@@ -73,7 +73,7 @@ pip install -r requirements.txt
 ### 4. Configurar Variables de Entorno
 ```bash
 # Copiar archivo de ejemplo
-cp .env.example .env
+cp env.example .env
 
 # Editar .env con tu token de Telegram
 TELEGRAM_BOT_TOKEN=tu_token_aqui
