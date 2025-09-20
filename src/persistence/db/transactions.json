@@ -1,0 +1,66 @@
+{
+    "1487846035": [
+        {
+            "id": 1,
+            "amount": 640,
+            "description": "Transferencia recibida",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 2,
+            "amount": 36,
+            "description": "Transferencia recibida",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 3,
+            "amount": 628,
+            "description": "Transferencia recibida",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 4,
+            "amount": -22,
+            "description": "Compra en linea",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 5,
+            "amount": 590,
+            "description": "Transferencia recibida",
+            "date": "2025-09-19"
+        }
+    ],
+    "8061692386": [
+        {
+            "id": 1,
+            "amount": -375,
+            "description": "Supermercado",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 2,
+            "amount": 301,
+            "description": "Transferencia recibida",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 3,
+            "amount": -931,
+            "description": "Supermercado",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 4,
+            "amount": -515,
+            "description": "Compra en l\u00ednea",
+            "date": "2025-09-19"
+        },
+        {
+            "id": 5,
+            "amount": -151,
+            "description": "Compra en l\u00ednea",
+            "date": "2025-09-19"
+        }
+    ]
+}

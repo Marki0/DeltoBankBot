@@ -1,0 +1,63 @@
+{
+    "1487846035": [
+        {
+            "monthly_payment": 902.58,
+            "total_to_pay": 10831.0,
+            "interest_rate": 0.15,
+            "principal": 10000,
+            "months": 12
+        },
+        {
+            "monthly_payment": 866.63,
+            "total_to_pay": 31198.8,
+            "interest_rate": 0.15,
+            "principal": 25000,
+            "months": 36
+        },
+        {
+            "monthly_payment": 2610.51,
+            "total_to_pay": 15663.04,
+            "interest_rate": 0.15,
+            "principal": 15000,
+            "months": 6
+        },
+        {
+            "monthly_payment": 1765.23,
+            "total_to_pay": 10591.37,
+            "interest_rate": 0.2,
+            "principal": 10000,
+            "months": 6
+        },
+        {
+            "monthly_payment": 237.57,
+            "total_to_pay": 21381.2,
+            "interest_rate": 0.1,
+            "principal": 15000.0,
+            "months": 90.0
+        },
+        {
+            "monthly_payment": 1257.56,
+            "total_to_pay": 40241.95,
+            "interest_rate": 0.15,
+            "principal": 33000.0,
+            "months": 32.0,
+            "timestamp": "2025-09-19T20:40:04.985837"
+        }
+    ],
+    "8061692386": [
+        {
+            "monthly_payment": 1765.23,
+            "total_to_pay": 10591.37,
+            "interest_rate": 0.2,
+            "principal": 10000,
+            "months": 6
+        },
+        {
+            "monthly_payment": 278.57,
+            "total_to_pay": 25071.47,
+            "interest_rate": 0.15,
+            "principal": 15000.0,
+            "months": 90.0
+        }
+    ]
+}
