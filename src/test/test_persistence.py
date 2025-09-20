@@ -2,7 +2,9 @@
 Archivo de pruebas para el sistema de persistencia mejorado.
 Demuestra las funcionalidades de contadores de interacciones y información de cuenta.
 """
-
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from persistence.data_manager import (
     get_user_account_info, increment_interaction_count, 
     create_user_account, load_users_data, save_users_data
@@ -100,7 +102,7 @@ def test_persistence_system():
     print(f"📅 Cuenta creada: {final_info['account_created']}")
     
     print("\n" + "=" * 60)
-    print("5️⃣ **VERIFICACIÓN DE PERSISTENCIA**)
+    print("5️⃣ **VERIFICACIÓN DE PERSISTENCIA**")
     print("=" * 60)
     
     # Verificar que los datos se guardaron correctamente

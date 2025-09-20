@@ -53,14 +53,15 @@
         {
             "id": 4,
             "amount": -515,
-            "description": "Compra en l\u00ednea",
+            "description": "Compra en linea",
             "date": "2025-09-19"
         },
         {
             "id": 5,
             "amount": -151,
-            "description": "Compra en l\u00ednea",
+            "description": "Compra en linea",
             "date": "2025-09-19"
         }
     ]
+    
 }

@@ -3,14 +3,18 @@
         "pin": "1234",
         "is_authenticated": true,
         "balance": 25497,
-        "interaction_count": 3,
+        "interaction_count": 4,
         "movement_queries": 2,
-        "last_interaction": "2025-09-19T20:40:04.987108",
-        "loan_simulations": 1
+        "last_interaction": "2025-09-20T08:47:30.335479",
+        "loan_simulations": 2
     },
     "8061692386": {
         "pin": "1234",
         "is_authenticated": true,
-        "balance": 25000
+        "balance": 43682,
+        "interaction_count": 1,
+        "loan_simulations": 1,
+        "last_interaction": "2025-09-20T08:47:09.871604"
     }
+    
 }

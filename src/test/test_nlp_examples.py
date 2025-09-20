@@ -3,6 +3,10 @@ Archivo de pruebas para demostrar las capacidades de NLP del bot bancario.
 Contiene ejemplos de consultas en lenguaje natural que el bot puede procesar.
 """
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from bot.processor import process_user_query
 from bot.banking_dictionary import find_intent_by_keywords
 import asyncio

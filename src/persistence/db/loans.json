@@ -42,6 +42,14 @@
             "principal": 33000.0,
             "months": 32.0,
             "timestamp": "2025-09-19T20:40:04.985837"
+        },
+        {
+            "monthly_payment": 1740.34,
+            "total_to_pay": 10442.03,
+            "interest_rate": 0.15,
+            "principal": 10000.0,
+            "months": 6.0,
+            "timestamp": "2025-09-20T08:47:30.334153"
         }
     ],
     "8061692386": [
@@ -58,6 +66,82 @@
             "interest_rate": 0.15,
             "principal": 15000.0,
             "months": 90.0
+        },
+        {
+            "monthly_payment": 1715.61,
+            "total_to_pay": 10293.68,
+            "interest_rate": 0.1,
+            "principal": 10000.0,
+            "months": 6.0,
+            "timestamp": "2025-09-20T08:47:09.870334"
+        }
+    ],
+    "12345": [
+        {
+            "monthly_payment": 7634.37,
+            "total_to_pay": 183224.89,
+            "interest_rate": 0.2,
+            "principal": 150000.0,
+            "months": 24.0,
+            "timestamp": "2025-09-20T09:16:54.625513"
+        },
+        {
+            "monthly_payment": 11149.08,
+            "total_to_pay": 401366.7,
+            "interest_rate": 0.2,
+            "principal": 300000.0,
+            "months": 36.0,
+            "timestamp": "2025-09-20T09:16:54.650380"
+        },
+        {
+            "monthly_payment": 9263.45,
+            "total_to_pay": 111161.41,
+            "interest_rate": 0.2,
+            "principal": 100000.0,
+            "months": 12.0,
+            "timestamp": "2025-09-20T09:16:54.680458"
+        },
+        {
+            "monthly_payment": 7634.37,
+            "total_to_pay": 183224.89,
+            "interest_rate": 0.2,
+            "principal": 150000.0,
+            "months": 24.0,
+            "timestamp": "2025-09-20T09:27:17.676737"
+        },
+        {
+            "monthly_payment": 11149.08,
+            "total_to_pay": 401366.7,
+            "interest_rate": 0.2,
+            "principal": 300000.0,
+            "months": 36.0,
+            "timestamp": "2025-09-20T09:27:17.705263"
+        },
+        {
+            "monthly_payment": 9263.45,
+            "total_to_pay": 111161.41,
+            "interest_rate": 0.2,
+            "principal": 100000.0,
+            "months": 12.0,
+            "timestamp": "2025-09-20T09:27:17.739026"
+        }
+    ],
+    "123456789": [
+        {
+            "principal": 50000,
+            "months": 24,
+            "interest_rate": 0.15,
+            "monthly_payment": 2427.43,
+            "total_to_pay": 58258.32,
+            "timestamp": "2025-09-20T09:28:22.618707"
+        },
+        {
+            "principal": 100000,
+            "months": 36,
+            "interest_rate": 0.12,
+            "monthly_payment": 3321.43,
+            "total_to_pay": 119571.48,
+            "timestamp": "2025-09-20T09:28:22.653234"
         }
     ]
 }
