@@ -115,6 +115,7 @@ docker-compose ps
 
 ### Comandos Disponibles
 - `/start` - Iniciar sesión y mostrar bienvenida del Banco Delta
+-  `1234` - Pin simulado para acceder a las funcionalidades.
 
 ### Ejemplos de Consultas
 
